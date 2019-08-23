@@ -26,14 +26,30 @@ i {
 	margin-right: 15px;
 }
 
+
+
+input:invalid:not(:placeholder-shown) + .form__error {
+	display: block;
+}
+
+.form__error {
+	color: red;
+	text-align: left;
+	font-size: 12px;
+	display: block;
+	margin-top: 3px;
+	display: none;
+}
+
 .popup{
 
 	position: fixed;
 	width: 100%;
 	height: 100%;
 	z-index: 1000000;
-	background-color: rgba(0,0,0,.8);
 	display: none;
+	background-color: rgba(0,0,0,.8); 
+
 	
 }
 .popup__inner{
@@ -289,7 +305,6 @@ form {
 
 .menu-btn {
 
-  display: block;
   width: 50px;
   height: 50px;
   background-color: #fff;
@@ -760,26 +775,24 @@ footer {
 	
 	margin: 80px 0 50px;
 }
-.info__menu_2 {
 
-}
 .info__inner {
 	display: flex;
 	width: 100%;
 }
-.info__contact_2 {
+.info__contact {
 	height: 95px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	margin: 0 auto;
 }
-.info__menu_2 ul li a{
+.info__menu ul li a{
 	text-decoration: none;
 	font-size: 18px;
 	color: #8993ad;
 }
-.info__menu_2 ul li {
+.info__menu ul li {
 	margin-bottom: 16px;
 }
 .info__phone a , .info__mail a{
@@ -874,7 +887,6 @@ footer {
 		justify-content: space-around;
 	}
 	.slider {
-		display: block;
 		margin: 0 auto;
 		width: 100px;
 		margin-bottom: 100px;
@@ -971,7 +983,7 @@ footer {
 		
 	}
 	
-	.info__contact_2 {
+	.info__contact {
 		margin: 0;
 	}
 	.info__inner {
@@ -1043,10 +1055,10 @@ footer {
 	.info__inner {
 		flex-direction: column;
 	}
-	.info__menu_2 {
+	.info__menu {
 		margin-bottom: 40px;
 	}
-	.info__contact_2 {
+	.info__contact {
 		margin-bottom: 25px;
 	}
 	.button_footer {

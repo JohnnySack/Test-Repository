@@ -9,13 +9,15 @@ $('.menu-btn').on('click', function(e) {
 
 $(document).ready(function(){
 
-    $("body").on("click",".header__header-menu__a", function (event) {
+    $("body").on("click",".menu__a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
         $('html').animate({scrollTop: top}, 1500);
-
+        
+       
     });
+
 
 });
 
@@ -70,6 +72,8 @@ $('.examples__carousel').slick({
     // instead of a settings object
   ]
 })
+
+
 
 
 
