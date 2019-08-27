@@ -51,6 +51,7 @@ $('.examples__carousel').slick({
   	slidesToShow: 3,
   	slidesToScroll: 2,
   	infinite: false,
+    dots: true,
   	responsive: [
     {
       breakpoint: 1400,
